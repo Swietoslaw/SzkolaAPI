@@ -7,5 +7,8 @@ namespace SzkolaAPI.Data
         public DataContext(DbContextOptions<DataContext> options): base(options) { }
 
         public DbSet<Student> Students { get; set; }
+        public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<Class> Class { get; set; }
+        public DbSet<ClassTeacher> ClassTeacher { get; set; }
     }
 }
